@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>weather</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header"></header>
+		<main class="main">
+			<div class="weather">
+				<div class="weather__container">
+					<form class="weather__form">
+						<input class="weather__input" placeholder="enter the city" value="" type="text" id="task"
+							name="task" required>
+					</form>
+					<div class="weather__interface">
+						<div class="visual-left">
+							<div class="visual-left__bottom">
+								<div class="visual-left__city">
+									Ufa
+								</div>
+								<div id="favor" class="visual-left__add-favor">
+									<img id="img-favor" class="icon__add-favor" src="img/favorites.svg" alt="">
+								</div>
+							</div>
+							<div class="visual-left__temp-shell">
+								<div class="visual-left__temp">
+									0
+								</div>
+								<div class="visual-left__icon">
+									<img class="visual-left__img" src="img/close-icon.svg" alt="">
+								</div>
+							</div>
+							<div class="visual-left__additional-information">
+								<div class="visual-left__feels-like">
+									Feels like: <span class="feels-like-temperature">10</span>
+								</div>
+								<div class="visual-left__sunrise">
+									Sunrise: <span class="sunrise-time-1">03</span>
+								</div>
+								<div class="visual-left__sunset">
+									Sunset: <span class="sunset-time-1">18</span>
+								</div>
+							</div>
+							<div class="visual-left__different-time-temperature">
+								<div class="different-time-temperature">
+									<div class="different-time-temperature__shell">
+										<div class="time">
+											<span class="different-time-temperature__time-1">12</span>:<span
+												class="different-time-temperature__time-2">00</span>
+										</div>
+										<div class="different-time-temperature__temperature">
+											Temperature: <span
+												class="different-time-temperature__temperature-value">13</span>
+										</div>
+										<div class="different-time-temperature__feels-like">
+											Feels like: <span
+												class="different-time-temperature__feels-like-value">11</span>
+										</div>
+									</div>
+									<img class="different-time-temperature__image" src="img/mainly-cloudy.svg" alt="">
+								</div>
+								<div class="different-time-temperature">
+									<div class="different-time-temperature__shell">
+										<div class="time">
+											<span class="different-time-temperature__time-1">12</span>:<span
+												class="different-time-temperature__time-2">00</span>
+										</div>
+										<div class="different-time-temperature__temperature">
+											Temperature: <span
+												class="different-time-temperature__temperature-value">13</span>
+										</div>
+										<div class="different-time-temperature__feels-like">
+											Feels like: <span
+												class="different-time-temperature__feels-like-value">11</span>
+										</div>
+									</div>
+									<img class="different-time-temperature__image" src="img/mainly-cloudy.svg" alt="">
+								</div>
+								<div class="different-time-temperature">
+									<div class="different-time-temperature__shell">
+										<div class="time">
+											<span class="different-time-temperature__time-1">12</span>:<span
+												class="different-time-temperature__time-2">00</span>
+										</div>
+										<div class="different-time-temperature__temperature">
+											Temperature: <span
+												class="different-time-temperature__temperature-value">13</span>
+										</div>
+										<div class="different-time-temperature__feels-like">
+											Feels like: <span
+												class="different-time-temperature__feels-like-value">11</span>
+										</div>
+									</div>
+									<img class="different-time-temperature__image" src="img/mainly-cloudy.svg" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="cities">
+							<div class="cities__added-locations">
+								Added Locations:
+							</div>
+							<ul class="cities__list">
+
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script type="module" src="index.js"></script>
+			<!-- <script type="module" src="request.js"></script>
+			<script type="module" src="render.js"></script>
+			<script type="module" src="addcity.js"></script>
+			<script type="module" src="addFavorites.js"></script>
+			<script type="module" src="localStorage.js"></script> -->
+		</main>
+		<footer class="footer"></footer>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,319 @@
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+li {
+	list-style: none;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+img {
+	vertical-align: top;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+html {
+	/* по умолчанию */
+	/* font-size: 16px;  */
+}
+
+body {
+	line-height: 1;
+	color: #fff;
+	/* background-color: #333; */
+	background-color: #999999;
+	font-family: "Roboto";
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+/* ------------------------------ */
+.main {
+	flex-grow: 1;
+	padding: 30px;
+}
+
+[class*="__container"] {
+	max-width: 600px;
+	margin: 0px auto;
+	/* display: flex; */
+}
+
+.main__registration {
+	display: flex;
+	margin-bottom: 30px;
+}
+
+
+.weather {
+	font-size: 24px;
+	font-family: 'Roboto';
+}
+
+.weather__container {
+	background-color: #fff;
+	color: black;
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #000000;
+}
+
+.weather__form {
+	border-bottom: 1px solid #000;
+	padding: 11px 16px;
+}
+
+.weather__input {
+	width: 100%;
+	font-size: 20px;
+	outline: none;
+}
+
+.weather__interface {
+	display: flex;
+	justify-content: space-between;
+}
+
+.visual-left {
+	display: flex;
+	flex-direction: column;
+	flex: 0 1 50%;
+	padding: 21px 16px;
+	border-right: 1px solid #000;
+}
+
+.visual-left__temp-shell {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.visual-left__temp {
+	font-size: 70px;
+}
+
+.visual-left__temp::after {
+	content: '°';
+}
+
+.visual-left__icon {
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	flex: 1 1 auto;
+}
+
+.visual-left__img {
+	position: absolute;
+	top: -60px;
+	right: 0;
+	scale: 0.7;
+}
+
+.visual-left__bottom {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.visual-left__city {}
+
+.visual-left__add-favor {}
+
+.icon__add-favor {}
+
+.icon__add-favor-red {
+	filter: invert(21%) sepia(92%) saturate(7488%) hue-rotate(344deg) brightness(106%) contrast(107%);
+}
+
+.cities {
+	display: flex;
+	flex-direction: column;
+	flex: 0 1 50%;
+}
+
+.cities__added-locations {
+	padding: 23px 18px 17px 18px;
+	border-bottom: 1px solid #000;
+}
+
+.cities__list {
+	padding: 35px 18px 15px;
+	flex: 1 1 auto;
+}
+
+.cities__item {
+	cursor: pointer;
+	position: relative;
+	z-index: 19;
+}
+
+.cities__item:not(:last-child) {
+	margin-bottom: 20px;
+
+}
+
+.cities__icon {
+	position: absolute;
+	top: 2px;
+	right: 0px;
+	transform: rotate(45deg);
+	z-index: 99;
+}
+
+/* 
+.inputt:checked+.form-summary__task::after {
+	transform: scale(1);
+}
+
+.inputt:checked+.form-summary__task {
+	background-color: #F4F4F4;
+} */
+
+
+.visual-left__additional-information {
+	font-size: 21px;
+	margin-bottom: 25px;
+}
+
+.visual-left__feels-like {
+	margin-bottom: 10px;
+}
+
+.feels-like-temperature {}
+
+.visual-left__sunrise {
+	margin-bottom: 10px;
+}
+
+.sunrise-time {}
+
+.visual-left__sunset {
+	margin-bottom: 10px;
+}
+
+.sunset-time {}
+
+
+.visual-left__different-time-temperature {
+	font-size: 18px;
+}
+
+.different-time-temperature {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #000;
+	position: relative;
+	padding: 15px;
+}
+
+.different-time-temperature-15-00 {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #000;
+	position: relative;
+	padding: 15px;
+}
+
+.different-time-temperature-18-00 {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #000;
+	position: relative;
+	padding: 15px;
+}
+
+.time {}
+
+.different-time-temperature__shell {}
+
+.different-time-temperature__temperature {}
+
+.different-time-temperature__temperature-value {}
+
+.different-time-temperature__feels-like {}
+
+.different-time-temperature__feels-like-value {}
+
+.different-time-temperature__image {
+	width: 100px;
+	position: absolute;
+	top: 0px;
+	right: 0;
+}
+
+.different-time-temperature__image-15-00 {
+	width: 100px;
+	position: absolute;
+	top: 0px;
+	right: 0;
+}
+
+.different-time-temperature__image-18-00 {
+	width: 100px;
+	position: absolute;
+	top: 0px;
+	right: 0;
+}
+
+.different-time-temperature-15-00 {}
+
+.different-time-temperature-15-00__temperature {}
+
+.different-time-temperature-15-00__temperature-value {}
+
+.different-time-temperature-15-00__feels-like {}
+
+.different-time-temperature-15-00__feels-like-value {}
+
+.different-time-temperature-18-00 {}
+
+.different-time-temperature-18-00__temperature {}
+
+.different-time-temperature-18-00__temperature-value {}
+
+.different-time-temperature-18-00__feels-like {}
+
+.different-time-temperature-18-00__feels-like-value {}
